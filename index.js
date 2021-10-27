@@ -65,7 +65,33 @@ app.get("/", (req, res) => {
   res.send("Running Genious Server");
 });
 
+app.get("/hellow", (req, res) => {
+  res, send("hellow updated here");
+});
 //listening post
 app.listen(port, () => {
   console.log("Running genious server on port", port);
 });
+
+/*
+one time:
+1. heruku account open
+2. heruku software install
+
+every project:
+1.git init
+2. .gitignore(node_modules,.env)
+3. push everything to git
+4. make sure have this script "start": "node index.js"
+5. make sure put process.env.PORT in front of your port number
+6. heroku login
+7. heroku create (only one time for a project)
+8. cammand: git push heruko main
+
+----------
+update
+1. save everything and check locally
+2. git add,commit,push
+3. git push heroku main
+
+*/
